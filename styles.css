@@ -579,3 +579,35 @@ h3 {
     align-items: flex-start;
   }
 }
+
+
+.contact-line {
+  margin-top: 18px;
+  font-size: 15px !important;
+}
+
+.contact-line a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.site-nav a,
+.btn,
+.brand {
+  transition: opacity .18s ease, transform .18s ease, background .18s ease;
+}
+
+.site-nav a:hover,
+.brand:hover {
+  opacity: .72;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.gallery-card {
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
