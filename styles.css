@@ -754,3 +754,219 @@ h3 {
     top: 64px;
   }
 }
+
+
+/* =========================================================
+   HPW FULL DARK WOODSHOP THEME
+   This block intentionally appears last so it overrides
+   all earlier starter-theme styles.
+   ========================================================= */
+
+.dark-theme {
+  --bg: #12110f;
+  --panel: #1c1a17;
+  --ink: #f7f2e9;
+  --muted: #bbb2a5;
+  --line: #3b342b;
+  --dark: #0d0c0b;
+  --wood: #b98248;
+  --wood-light: #d7a35f;
+  background:
+    radial-gradient(circle at top right, rgba(183,130,72,.10), transparent 35%),
+    #12110f;
+  color: #f7f2e9;
+}
+
+/* Header */
+.dark-theme .site-header {
+  background: rgba(10,10,9,.98) !important;
+  border-bottom: 1px solid rgba(215,163,95,.38) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.35) !important;
+}
+
+.dark-theme .brand-text strong {
+  color: #fff !important;
+}
+
+.dark-theme .brand-text small {
+  color: #d7a35f !important;
+}
+
+.dark-theme .site-nav a {
+  color: #eee8de !important;
+}
+
+.dark-theme .site-nav a:hover {
+  color: #d7a35f !important;
+}
+
+.dark-theme .site-nav .nav-cta {
+  color: #15120f !important;
+  background: #d7a35f !important;
+  border-color: #d7a35f !important;
+}
+
+/* Main surfaces */
+.dark-theme .hero,
+.dark-theme .section {
+  background: transparent;
+}
+
+.dark-theme .section.alt {
+  background:
+    linear-gradient(rgba(255,255,255,.015), rgba(255,255,255,.015)),
+    #171512 !important;
+  border-color: #332d26 !important;
+}
+
+.dark-theme .eyebrow {
+  color: #d7a35f;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+  color: #fff;
+}
+
+.dark-theme .hero-lead,
+.dark-theme .section-heading p:not(.eyebrow),
+.dark-theme .card p,
+.dark-theme .about-copy,
+.dark-theme .hero-points {
+  color: #bbb2a5 !important;
+}
+
+/* Buttons */
+.dark-theme .btn.primary {
+  background: #d7a35f !important;
+  color: #17130f !important;
+  border-color: #d7a35f !important;
+}
+
+.dark-theme .btn.secondary {
+  color: #f7f2e9 !important;
+  border-color: #6d6255 !important;
+  background: rgba(255,255,255,.02) !important;
+}
+
+.dark-theme .btn.secondary:hover {
+  border-color: #d7a35f !important;
+}
+
+/* Service cards */
+.dark-theme .card {
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.025), rgba(255,255,255,.01)),
+    #1b1916 !important;
+  border-color: #3b342b !important;
+  box-shadow: 0 18px 42px rgba(0,0,0,.18);
+}
+
+.dark-theme .icon {
+  background: #0d0c0b !important;
+  color: #d7a35f !important;
+  border: 1px solid #4d4133;
+}
+
+/* Hero CNC card */
+.dark-theme .machine-card {
+  background: #0c0b0a !important;
+  border: 1px solid #3b3329;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+/* Gallery */
+.dark-theme .gallery-card {
+  border: 1px solid #3a332a;
+  box-shadow: 0 16px 36px rgba(0,0,0,.28);
+}
+
+.dark-theme .gallery-caption {
+  background: rgba(8,8,7,.92) !important;
+}
+
+/* Quote section */
+.dark-theme .quote-section {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(215,163,95,.12), transparent 30%),
+    #0d0c0b !important;
+  border-top: 1px solid #3c3329;
+}
+
+.dark-theme .quote-form {
+  background: #1b1916 !important;
+  color: #f7f2e9 !important;
+  border: 1px solid #3b342b;
+  box-shadow: 0 24px 60px rgba(0,0,0,.30);
+}
+
+.dark-theme .quote-form input,
+.dark-theme .quote-form select,
+.dark-theme .quote-form textarea {
+  background: #11100e !important;
+  color: #f7f2e9 !important;
+  border-color: #4a4035 !important;
+}
+
+.dark-theme .quote-form input::placeholder,
+.dark-theme .quote-form textarea::placeholder {
+  color: #857b6f;
+}
+
+.dark-theme .form-btn {
+  background: #d7a35f !important;
+  color: #17130f !important;
+  border-color: #d7a35f !important;
+}
+
+/* Footer */
+.dark-theme .site-footer {
+  background: #080807 !important;
+  border-top: 1px solid #332c24 !important;
+}
+
+/* Compact logo - hard limited */
+.dark-theme .header-logo {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  flex: 0 0 52px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(215,163,95,.55) !important;
+}
+
+.dark-theme .nav-wrap {
+  min-height: 70px !important;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .dark-theme .header-logo {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    flex: 0 0 44px !important;
+  }
+
+  .dark-theme .nav-wrap {
+    min-height: 64px !important;
+  }
+
+  .dark-theme .site-nav {
+    top: 64px !important;
+    background: #11100e !important;
+    border-color: #3b342b !important;
+  }
+
+  .dark-theme .site-nav a {
+    color: #f0ebe2 !important;
+  }
+}
