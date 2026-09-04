@@ -720,3 +720,37 @@ h3 {
     border-color: rgba(255,255,255,.12);
   }
 }
+
+
+/* Compact header logo size fix */
+.header-logo {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  flex: 0 0 52px !important;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nav-wrap {
+  min-height: 70px;
+}
+
+@media (max-width: 700px) {
+  .header-logo {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+    flex-basis: 44px !important;
+  }
+
+  .nav-wrap {
+    min-height: 64px;
+  }
+
+  .site-nav {
+    top: 64px;
+  }
+}
