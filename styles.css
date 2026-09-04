@@ -1149,3 +1149,44 @@ h3 {
     width: 100%;
   }
 }
+
+
+/* =========================================================
+   FINAL APPROVED HERO LOGO SIZE + POSITION
+   ========================================================= */
+.dark-theme .hero.hero-centered {
+  padding-top: 34px;
+}
+
+.dark-theme .hero-center-content {
+  width: 100%;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.dark-theme .hero-main-logo {
+  width: clamp(245px, 22vw, 305px) !important;
+  max-width: 305px !important;
+  margin: -2px auto 14px !important;
+  display: block !important;
+  position: relative;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+}
+
+@media (max-width: 700px) {
+  .dark-theme .hero.hero-centered {
+    padding-top: 28px;
+  }
+
+  .dark-theme .hero-main-logo {
+    width: 205px !important;
+    max-width: 205px !important;
+    margin: 0 auto 16px !important;
+  }
+}
