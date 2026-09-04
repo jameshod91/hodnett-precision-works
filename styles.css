@@ -644,3 +644,79 @@ h3 {
     border-radius: 18px;
   }
 }
+
+
+/* Dark HPW header with compact logo emblem */
+.site-header {
+  background: rgba(18, 17, 15, 0.97);
+  border-bottom: 1px solid rgba(215, 173, 121, .35);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.nav-wrap {
+  min-height: 88px;
+}
+
+.header-logo {
+  width: 66px;
+  height: 66px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(215, 173, 121, .55);
+  flex: 0 0 auto;
+}
+
+.brand-text strong {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: .01em;
+}
+
+.brand-text small {
+  color: var(--wood-light);
+}
+
+.site-nav a {
+  color: rgba(255,255,255,.88);
+}
+
+.site-nav a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.site-nav .nav-cta {
+  color: #171512;
+  background: var(--wood-light);
+  border-color: var(--wood-light);
+}
+
+.menu-toggle {
+  color: #fff;
+  border-color: rgba(255,255,255,.28);
+}
+
+@media (max-width: 700px) {
+  .nav-wrap {
+    min-height: 78px;
+  }
+
+  .header-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brand-text strong {
+    font-size: 12px;
+  }
+
+  .brand-text small {
+    font-size: 9px;
+  }
+
+  .site-nav {
+    top: 78px;
+    background: #1d1c1a;
+    border-color: rgba(255,255,255,.12);
+  }
+}
