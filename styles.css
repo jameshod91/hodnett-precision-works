@@ -1011,3 +1011,141 @@ h3 {
     gap: 2px;
   }
 }
+
+
+/* =========================================================
+   CENTERED HPW HERO — approved Option 2
+   ========================================================= */
+.dark-theme .hero.hero-centered {
+  position: relative;
+  min-height: 660px;
+  padding: 72px 0 76px;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  background:
+    linear-gradient(rgba(8,8,7,.22), rgba(8,8,7,.42)),
+    url("cnc-hero-bg.webp") center center / cover no-repeat;
+  border-bottom: 1px solid rgba(215,163,95,.22);
+}
+
+.dark-theme .hero.hero-centered .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 50% 26%, rgba(0,0,0,.08), rgba(0,0,0,.34) 72%),
+    linear-gradient(to bottom, rgba(8,8,7,.08), rgba(8,8,7,.34));
+}
+
+.dark-theme .hero-center-content {
+  max-width: 980px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-theme .hero-main-logo {
+  width: clamp(210px, 25vw, 340px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  border: 2px solid rgba(215,163,95,.72);
+  box-shadow: 0 20px 55px rgba(0,0,0,.52);
+}
+
+.dark-theme .hero-centered .hero-eyebrow {
+  color: #f7f2e9;
+  margin-bottom: 10px;
+  font-size: clamp(13px, 1.4vw, 18px);
+}
+
+.dark-theme .hero-centered h1 {
+  max-width: 900px;
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(44px, 6.2vw, 78px);
+  letter-spacing: -.045em;
+  text-shadow: 0 4px 18px rgba(0,0,0,.55);
+}
+
+.dark-theme .hero-tagline {
+  margin: 0 0 12px;
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .24em;
+  color: #d7a35f;
+  font-size: clamp(14px, 1.8vw, 20px);
+}
+
+.dark-theme .hero-centered .hero-lead {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255,255,255,.9);
+  font-size: clamp(16px, 2vw, 20px);
+  text-shadow: 0 2px 12px rgba(0,0,0,.6);
+}
+
+.dark-theme .centered-actions {
+  justify-content: center;
+  margin: 28px 0 0;
+}
+
+.dark-theme .hero-centered .btn.primary {
+  background: #d7a35f;
+  border-color: #d7a35f;
+  color: #15120e;
+}
+
+.dark-theme .hero-centered .btn.secondary {
+  background: rgba(15,14,12,.72);
+  border-color: rgba(255,255,255,.35);
+  color: #fff;
+}
+
+.dark-theme .hero-centered .btn.secondary:hover {
+  background: rgba(15,14,12,.9);
+}
+
+/* Keep header clean now that the large logo is the hero centerpiece */
+.dark-theme .brand {
+  gap: 0;
+}
+
+.dark-theme .brand-text strong {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .dark-theme .hero.hero-centered {
+    min-height: 590px;
+    padding: 50px 0 58px;
+    background-position: 64% center;
+  }
+
+  .dark-theme .hero-main-logo {
+    width: 210px;
+    margin-bottom: 20px;
+  }
+
+  .dark-theme .hero-centered h1 {
+    font-size: clamp(38px, 11vw, 54px);
+  }
+
+  .dark-theme .hero-tagline {
+    letter-spacing: .14em;
+  }
+
+  .dark-theme .centered-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .dark-theme .centered-actions .btn {
+    width: 100%;
+  }
+}
