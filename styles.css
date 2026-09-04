@@ -970,3 +970,44 @@ h3 {
     color: #f0ebe2 !important;
   }
 }
+
+
+/* Real HPW project gallery */
+.dark-theme .real-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  gap: 22px;
+}
+.dark-theme .real-gallery .project-card {
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  position: relative;
+  background: #0d0c0b;
+}
+.dark-theme .project-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+.dark-theme .project-card:hover .project-image { transform: scale(1.025); }
+.dark-theme .project-card .gallery-caption {
+  inset: auto 14px 14px 14px;
+  background: rgba(8,8,7,.9) !important;
+  border: 1px solid rgba(215,163,95,.2);
+}
+.dark-theme .project-card .gallery-caption strong { color: #fff; }
+.dark-theme .project-card .gallery-caption span { color: #d7a35f; }
+
+@media (max-width: 700px) {
+  .dark-theme .real-gallery { grid-template-columns: 1fr; gap: 18px; }
+  .dark-theme .real-gallery .project-card { aspect-ratio: 4 / 3; }
+  .dark-theme .project-card .gallery-caption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}
