@@ -1424,3 +1424,53 @@ h3 {
     font-size: 11px;
   }
 }
+
+
+/* Facebook feature section below gallery */
+.facebook-section {
+  padding: 34px 0;
+  background: #0e0d0c;
+  border-top: 1px solid rgba(215,163,95,.16);
+  border-bottom: 1px solid rgba(215,163,95,.16);
+}
+
+.facebook-section .facebook-cta {
+  margin: 0 auto;
+}
+
+/* Small social link retained in footer */
+.footer-social-small {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.footer-social-small a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #bdb5aa;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.footer-social-small a:hover,
+.footer-social-small a:focus-visible {
+  color: #d7a35f;
+}
+
+.footer-facebook-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+}
