@@ -1072,6 +1072,13 @@ h3 {
   text-shadow: 0 4px 18px rgba(0,0,0,.55);
 }
 
+.dark-theme .hero-value-line {
+  margin: 8px 0 0;
+  color: rgba(255,255,255,0.92);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 600;
+}
+
 .dark-theme .hero-tagline {
   margin: 0 0 12px;
   font-family: "Archivo", sans-serif;
