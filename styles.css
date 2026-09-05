@@ -1333,3 +1333,7 @@ h3 {
     width: 100%;
   }
 }
+
+.footer-social { text-align:center; margin-top:14px; }
+.footer-social .facebook-link { color:#d7a35f; font-weight:700; text-decoration:none; letter-spacing:.04em; }
+.footer-social .facebook-link:hover, .footer-social .facebook-link:focus { color:#fff; }
